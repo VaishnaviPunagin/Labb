@@ -1,0 +1,30 @@
+.tab{
+    display:flex;
+    justify-content: center;
+}
+
+input[type=text]{
+    height: 80px;
+    width: 350px;
+    font-size: 50px;
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=button]{
+    height: 80px;
+    width: 80px;
+    background-color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type=button]:hover{
+    background-color: white;
+    font-size:25px;
+}
+table{
+    border:3px;
+    padding: 5px;
+    background-color: sienna;
+    border-radius: 2px;
+}
