@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+   <title>WP,4a!</title>
+</head>
+
+<body bgcolor="linen">
+    <p id="demo"></p>
+    <script>
+        var one= setInterval(inTimer,1000);
+        var size=5;
+        var ids=document.getElementById("demo");
+        function inTimer()
+        {
+            ids.innerHTML='This text is now GROWING!';
+            ids.setAttribute('style',"font-size:"+size+"px; color:red");
+            size+=5;
+            if(size>=50)
+            {
+                clearInterval(one);
+                two=setInterval(deTimer,1000);
+            }
+        }
+        function deTimer()
+        {
+            
+            ids.innerHTML='This text is now SHRINKING!!!';
+            ids.setAttribute('style',"font-size:"+size+"px;color:blue");
+            size-=5;
+            if(size==5)
+            {
+                clearInterval(two);
+                done=setInterval(jobdone(),1000);
+            }
+        }
+
+        function jobdone()
+        {
+            ids.innerHTML='Done saar';
+            ids.setAttribute('style',"font-size:40px;color:black");
+        }
+        
+    </script>
+</body>
+</html>
